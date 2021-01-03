@@ -19,7 +19,7 @@ head {
   h1 {font-family: ubunturegular;
     color: white;
     font-size: 4em;
-    margin-top: 200px;
+    vertical-align: middle;
   }
   
   h2 {font-family: ubunturegular;
