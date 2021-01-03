@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <center>
+        <title>Bacon API</title>
+        <link rel="stylesheet" href="submit.css">
+        <h1>Bacon API</h1>
+        <h2>Submit An Image</h2>
+        </center>
+    </head>
+    <body>
+        <center>
+              <form>
+                <br>
+                Image URL:<br><input type="text" placeholder="Enter image link here" id='input'>
+                <br>
+                <br>
+                Discord name (with tag):<br><input type="text" placeholder="Enter name here" id='discord'>
+                <br>
+              </form>
+              <br>
+              <button onclick='submit()'>Submit</button>
+        </center>
+    </body>
+    <script>
+        function submit() {
+            var url = document.getElementById('input').value;
+            var name = document.getElementById('discord').value;
+            var request = new XMLHttpRequest();
+            request.open("POST", "https://discord.com/api/webhooks/795121413526650920/vuG0J_YmEW1gGZAzqrOMksu2AcequcwOekf4Opw_C9is5QERuQiq2OZHfdcVR_P4JyWL");
+            request.setRequestHeader('Content-type', 'application/json');
+            var params = {
+            username: "Image Submissions",
+            avatar_url: "https://image.shutterstock.com/image-photo/cute-dog-pug-breed-have-260nw-719412469.jpg",
+            content: url + ' from ' + name
+}
+            request.send(JSON.stringify(params));
+            window.location.replace("https://discord.gg/ehnEC7MKvn");
+        }
+    </script>
+</html>
+
