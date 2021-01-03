@@ -20,8 +20,10 @@ head {
     color: white;
     font-size: 4em;
     position: relative;
+    float: left;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
       }
   
   h2 {font-family: ubunturegular;
