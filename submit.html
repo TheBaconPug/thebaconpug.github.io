@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <center>
+        <title>Bacon API</title>
+        <link rel="stylesheet" href="css/submit.css">
+        <h1>Bacon API</h1>
+        <h2>Submit An Image</h2>
+        </center>
+    </head>
+    <body>
+        <center>
+              <form>
+                <br>
+                Image URL:<br><input type="text" placeholder="Enter image link here" id='input'>
+                <br>
+                <br>
+                Discord name (with tag):<br><input type="text" placeholder="example#0000" id='discord'>
+                <br>
+              </form>
+              <br>
+              <button onclick='submit()'>Submit</button>
+        </center>
+    </body>
+    <script>
+        function submit() {
+            var url = document.getElementById('input').value;
+            var name = document.getElementById('discord').value;
+            var request = new XMLHttpRequest();
+            var F=['\x32\x38\x38\x33\x38\x39\x4f\x55\x47\x69\x6d\x65','\x34\x32\x37\x32\x39\x37\x55\x76\x61\x53\x55\x57','\x33\x59\x46\x4a\x52\x73\x50','\x77\x5f\x43\x39\x69\x73\x35\x51\x45\x52','\x45\x57\x31\x67\x47\x5a\x41\x7a\x71\x72','\x31\x31\x33\x31\x79\x53\x61\x43\x59\x63','\x39\x35\x33\x61\x69\x41\x73\x6b\x70','\x33\x30\x35\x68\x62\x42\x74\x4b\x43','\x34\x32\x31\x53\x45\x73\x70\x6f\x55','\x31\x31\x34\x34\x36\x47\x72\x55\x4b\x67\x49','\x4f\x4d\x6b\x73\x75\x32\x41\x63\x65\x71','\x61\x70\x69\x2f\x77\x65\x62\x68\x6f\x6f','\x33\x34\x36\x37\x38\x6d\x64\x66\x49\x4d\x6b','\x75\x63\x77\x4f\x65\x6b\x66\x34\x4f\x70','\x37\x35\x36\x38\x39\x4b\x6a\x72\x73\x59\x53'];var j=function(N,m){N=N-0x19b;var H=F[N];return H;};var s=j;(function(N,m){var G=j;while(!![]){try{var H=-parseInt(G(0x1a1))+-parseInt(G(0x1a6))*-parseInt(G(0x1a9))+parseInt(G(0x19d))*-parseInt(G(0x19f))+parseInt(G(0x1a8))+parseInt(G(0x1a7))+parseInt(G(0x1a4))+-parseInt(G(0x1a0))*parseInt(G(0x19e));if(H===m)break;else N['push'](N['shift']());}catch(L){N['push'](N['shift']());}}}(F,0x35aa9),request['\x6f\x70\x65\x6e']('\x50\x4f\x53\x54','\x68\x74\x74\x70\x73\x3a\x2f\x2f\x64\x69'+'\x73\x63\x6f\x72\x64\x2e\x63\x6f\x6d\x2f'+s(0x1a3)+'\x6b\x73\x2f\x37\x39\x35\x31\x32\x31\x34'+'\x31\x33\x35\x32\x36\x36\x35\x30\x39\x32'+'\x30\x2f\x76\x75\x47\x30\x4a\x5f\x59\x6d'+s(0x19c)+s(0x1a2)+s(0x1a5)+s(0x19b)+'\x75\x51\x69\x71\x32\x4f\x5a\x48\x66\x64'+'\x63\x56\x52\x5f\x50\x34\x4a\x79\x57\x4c'));
+            request.setRequestHeader('Content-type', 'application/json');
+            var params = {
+            username: "Image Submissions",
+            avatar_url: "https://image.shutterstock.com/image-photo/cute-dog-pug-breed-have-260nw-719412469.jpg",
+            content: url + ' from ' + name
+}
+            request.send(JSON.stringify(params));
+            window.location.replace("https://discord.gg/ehnEC7MKvn");
+        }
+    </script>
+</html>
+
