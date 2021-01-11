@@ -25,6 +25,11 @@ head {
     color: white;
     font-size: 2em;
   }
+
+  h3 {font-family: ubunturegular;
+    color: white;
+    font-size: 2em;
+  }
   
   p {
     margin: 50px;
