@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <center>
+        <title>Coming Soon!</title>
+        <link rel="stylesheet" href="css/index.css">
+        <h1>My Text Editor</h1>
+        <h2>Coming Soon!</h2>
+        </center>
+        <link rel="favicon" type="image/ico" href="favicon.ico"/>
+    </head>
+    <body>
+        <center>
+            <button onclick="window.location.href='./index';">
+                Return to the main page
+              </button>
+        </center>
+    </body>
+</html>
