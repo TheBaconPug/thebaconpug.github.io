@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: thebaconpug.com
-Token: f16359713caff642d1123cfc04671a58e812010dc33bd917727b0c03f6821bbd
