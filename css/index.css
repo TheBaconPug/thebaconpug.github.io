@@ -33,7 +33,7 @@ head {
   
   body {
     margin: 0;
-    background-image: url(img/background.jpg);
+    background-image: linear-gradient(to right,#ffafbd, #ffc3a0);
   }
   
   button {
