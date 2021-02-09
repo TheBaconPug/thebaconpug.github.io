@@ -1,42 +1,38 @@
 head {
     font-family: ubunturegular;
-  }
+}
   
   
-  body {
-      background-color: black;
+body {
+      background-image: linear-gradient(to right,#ffafbd, #ffc3a0);
       font-family: ubunturegular;
-    }
-    @font-face {
+}
+
+@font-face {
       font-family: 'ubunturegular';
       src: url('fonts/ubuntu-regular-webfont.woff2') format('woff2'),
            url('fonts/ubuntu-regular-webfont.woff') format('woff');
       font-weight: normal;
-      font-style: normal;
-  
-  }
-  
-  h1 {font-family: ubunturegular;
+      font-style: normal; 
+}
+
+h1 {font-family: ubunturegular;
     color: white;
     font-size: 4em;
-  }
+}
   
-  h2 {font-family: ubunturegular;
+h2 {font-family: ubunturegular;
     color: white;
     font-size: 2em;
-  }
+}
   
-  p {
+p {
     margin: 50px;
     color: white;
-  }
-  
-  body {
-    margin: 0;
-    background-image: url(img/background.jpg);
-  }
-  
-  button {
+    font-size: 2.5em;
+}
+
+button {
     background-color: #8400ff;
     border: none;
     color: white;
@@ -49,18 +45,17 @@ head {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
-  }
-  
-  a:link {
-    text-decoration: none;
-  }
-  
-  div {
-    pointer-events: none
-  }
-  
-  form {
-    color: white;
-    font-family: ubunturegular;
-    font-size: 2em;
-  }
+    margin: 50px;
+}
+
+input {
+    border-radius: 12px;
+    border: none;
+    height: 1.5em;
+    font-size: 1.5em;
+}
+
+textarea {
+    border: solid 2px white;
+    background-image: linear-gradient(to right,#ffafbd, #ffc3a0);
+}
